@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #333;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+}
+
+.navbar {
+  text-align: center;
+  border-bottom: 2px solid #333;
+  margin-bottom: 0;
+  padding: 15px;
+}
+
+.brand {
+  font-size: 30px;
+}
+
+.scoreboard {
+  max-width: 295px;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px 5px;
+  margin: 10px auto;
+  display: grid;
+}
+
+.scoreboard-letter {
+  height: 45px;
+  width: 45px;
+  text-transform: uppercase;
+  border: 3px solid #ccc;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+}
+
+.correct {
+  color: #fff;
+  background-color: #006400;
+}
+
+.close {
+  color: #fff;
+  background-color: #daa520;
+}
+
+.wrong {
+  color: #fff;
+  background-color: #888;
+}
+
+.invalid {
+  animation: 1s flash;
+}
+
+@keyframes flash {
+  5% {
+    border-color: #dc143c;
+  }
+
+  100% {
+    border-color: #ccc;
+  }
+}
+
+.spiral {
+  font-size: 40px;
+  animation: 1.5s linear infinite spin;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.info-bar {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+@keyframes rainbow {
+  100%, 0% {
+    color: red;
+  }
+
+  8% {
+    color: #ff7f00;
+  }
+
+  16% {
+    color: #ff0;
+  }
+
+  25% {
+    color: #7fff00;
+  }
+
+  33% {
+    color: #0f0;
+  }
+
+  41% {
+    color: #00ff7f;
+  }
+
+  50% {
+    color: #0ff;
+  }
+
+  58% {
+    color: #007fff;
+  }
+
+  66% {
+    color: #00f;
+  }
+
+  75% {
+    color: #7f00ff;
+  }
+
+  83% {
+    color: #f0f;
+  }
+
+  91% {
+    color: #ff007f;
+  }
+}
+
+.winner {
+  animation: 4s linear infinite rainbow;
+}
+
+/*# sourceMappingURL=index.f404c7d0.css.map */
